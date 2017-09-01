@@ -1,0 +1,109 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.fx: 517.306408
+Camera.fy: 516.469215
+Camera.cx: 318.643040
+Camera.cy: 255.313989
+
+Camera.k1: 0.262383
+Camera.k2: -0.953104
+Camera.p1: -0.005358
+Camera.p2: 0.002628
+Camera.k3: 1.163314
+
+Camera.width: 640
+Camera.height: 480
+
+Camera.fps: 30.0
+
+Camera.bf: 40.0
+
+Camera.RGB: 1
+
+ThDepth: 40.0
+
+DepthMapFactor: 5000.0
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+ORBextractor.nFeatures: 1000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Tracking Parameters
+#--------------------------------------------------------------------------------------------
+Tracking.StereoInitializationTh: 500
+
+Tracking.TrackReferenceKeyFrameRatio: 0.7
+Tracking.TrackReferenceKeyFrameMatches: 15
+
+Tracking.TrackWithMotionModelRatio: 0.9
+Tracking.TrackWithMotionModelTh: 15
+Tracking.TrackWithMotionModelMatches: 20
+
+Tracking.TrackCameraPoseInliers: 10
+
+Tracking.TrackLocalMapInliersRelocalization: 50
+Tracking.TrackLocalMapInliers: 30
+Tracking.TrackLocalKeyFramesNum: 80
+
+Tracking.SearchLocalPointsRatio: 0.8
+Tracking.SearchLocalPointsTh: 3
+Tracking.SearchLocalPointsThRelocalization: 5
+Tracking.SearchLocalPointsViewLimit: 0.5
+
+Tracking.RelocalizationBowRatio: 0.75
+Tracking.RelocalizationBowMatches: 15
+Tracking.RelocalizationProjectionRatio: 0.9
+Tracking.RelocalizationProjectionLow: 10
+Tracking.RelocalizationProjectionMid: 30
+Tracking.RelocalizationProjectionHigh: 50
+
+Tracking.NeedNewKeyFrameTh: 3
+Tracking.NeedNewKeyFrameThLow: 2
+Tracking.NeedNewKeyFrameRefRatio: 0.75
+Tracking.NeedNewKeyFrameRefRatioLow: 0.40
+
+Tracking.ResetFramesNum: 5
+#--------------------------------------------------------------------------------------------
+# Frame Parameters
+#--------------------------------------------------------------------------------------------
+Frame.RowsOfGrid: 48
+Frame.ColssOfGrid: 64
+
+#--------------------------------------------------------------------------------------------
+# LocalMapping Parameters
+#--------------------------------------------------------------------------------------------
+LocalMapping.MapPointsRatio: 0.25
+LocalMapping.MapPointsTh: 3
+
+LocalMapping.CreateNewMapPointsKF: 10
+LocalMapping.SearchForTriangulationRatio: 0.6
+
+LocalMapping.SearchInNeighborsKF: 10
+LocalMapping.SearchInNeighborsRatio: 0.6
+
+LocalMapping.KeyFramesRatio: 0.9
+LocalMapping.KeyFramesTh: 3
+
+#--------------------------------------------------------------------------------------------
+# LoopClosing Parameters
+#--------------------------------------------------------------------------------------------
+LoopClosing.CovisibilityConsistencyTh: 3
+
+LoopClosing.ComputeSim3Ratio: 0.75
+LoopClosing.SearchByBoWTh: 20
+LoopClosing.SearchBySim3Th: 20
+LoopClosing.SearchByProjectionTh: 40
+
+LoopClosing.SearchAndFuseRatio: 0.8
+LoopClosing.SearchAndFuseTh: 4
